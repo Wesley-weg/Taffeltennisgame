@@ -1,0 +1,144 @@
+body{
+    background-color: aquamarine;
+    margin: 0;
+}
+
+#achtergrond {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+#fans {
+    position: absolute;
+    bottom: 0%;
+    height: 70%;
+    width: 100%;
+}
+
+.dissapear{
+    opacity: 0;
+    transition: 0.3s;
+}
+
+
+#tafel{
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    height: auto;
+}
+
+#bedjezwart{
+    position: absolute;
+    width: 10%;
+    top: 65%;
+    left: 35%;
+}
+
+#bedjerood{
+    position: absolute;
+    width: 10%;
+    top: 65%;
+    left: 50.5%;
+}
+
+#healthtegenstander{
+    position: absolute;
+    accent-color: limegreen;
+    width: 15%;
+    height: 5%;
+    top: 25%;
+    left: 50%;
+}
+
+#healthgebruiker{
+    position: absolute;
+    accent-color: limegreen;
+    width: 15%;
+    height: 5%;
+    top: 65%;
+    left: 15%;
+}
+#bedjetegenstander{
+    position: absolute;
+    width: 6%;
+    top: 35%;
+    left: 44%;
+}
+
+@keyframes ballupright {
+100%{
+    left: 50%;
+    top: 40% ;
+    transform:rotate(-360deg) ;
+}
+}
+
+@keyframes ballupleft {
+    100%{
+        left: 42%;
+        top: 40% ;
+        transform:rotate(-360deg) ;
+    }
+}
+
+@keyframes balldownleft {
+    0%{ 
+        left: 42%;
+        top: 50%;
+    }
+    100%{
+        top: 70% ;
+        transform:rotate(360deg) ;
+    }
+
+}
+
+@keyframes balldownright {
+    0%{ 
+        left: 50%;
+        top: 50%;
+    }
+    100%{
+        top: 70% ;
+        transform:rotate(360deg) ;
+    }
+
+}
+
+
+@keyframes bedjetegenstander{
+    35%{ transform: rotate(10deg);}
+    100%{ transform: rotate(-10deg);}
+    
+}
+@keyframes fans{
+    35%{
+        bottom: 2%;
+    }
+    100%{
+        bottom: 0%;
+    }
+    
+}
+#ball{
+    position: absolute;
+    top: 70%;
+    left: 46.5%;
+    height: 5%;
+    animation: rotate(360deg);
+    animation-duration: infinite;
+}
+
+#winner{
+    position: absolute;
+    color: yellow;
+    font-size: xx-large;
+    left: 50%;
+    
+}
+
+@keyframes winlose{
+    35%{ transform: rotate(10deg);}
+    100%{ transform: rotate(-10deg);}
+}
